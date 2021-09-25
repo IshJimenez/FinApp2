@@ -1,0 +1,37 @@
+/* .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+    "m m h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "m m f f f f f f f f f f";
+} */
+
+/* You can put . in the template area to represent blanks on the screen */
+
+/* .header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+.footer {
+    grid-area: f;
+} */
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* grid-template-rows: 100px 100px; */
+    /* With the info provided below the line above can be deleted */
+    grid-auto-rows: 100px;
+}
